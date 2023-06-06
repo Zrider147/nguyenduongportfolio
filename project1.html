@@ -7,6 +7,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.container {
+			  position: relative;
+			  width: 100%;
+			}
+			
+			.image {
+			  opacity: 1;
+			  display: block;
+			  width: 100%;
+			  height: auto;
+			  transition: .5s ease;
+			  backface-visibility: hidden;
+			}
+			
+			.middle {
+			  transition: .5s ease;
+			  opacity: 0;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  text-align: center;
+			}
+			
+			.container:hover .image {
+			  opacity: 0.3;
+			}
+			
+			.container:hover .middle {
+			  opacity: 1;
+			}
+			
+			.text {
+			  background-color: transparent;
+			  color: rgb(0, 0, 0);
+			  font-size: 16px;
+			  padding: 16px 32px;
+			}
+
+			.br {margin-bottom: 5cm;}
+			</style>
 	</head>
     <body class="is-preload">
 
@@ -15,7 +58,6 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
 					</header>
 
 				<!-- Nav -->
@@ -34,13 +76,28 @@
 							<section class="post">
 								<header class="major">
 									<h1>The Last Star Lord</h1>
-									<p>Smt</p>
 								</header>
-								<div class="image main"><img src="images/TLSL Gameplay.jpg" alt="" /></div>
-								This is a game made for BUV Gamejam event. I worked as a Project manager, main Game designer and main Unity developer in a groud of 4 people.</p>
-								<ul class="actions special">
-									<li><a href="https://hoanglongplanner.itch.io/buv-gamejam-may-2022" class="button">Play Now</a></li>
-								</ul>
+								<div class="container">
+									<img src="images/TLSL Gameplay.jpg" alt="Banner"  class ="image" style="width: 100%"/>
+									<div class ="middle">
+										<ul class="actions special">
+											<li><a href="https://hoanglongplanner.itch.io/buv-gamejam-may-2022" class="button" class="text">Play Now</a></li>
+										</ul>
+									</div>
+								</div>
+								<br>
+								<header>
+									<h2>About The Game</h2>
+									</p>This a game made in 44 hours during BUV Gamejam event and won first prize.<br>
+									I worked as project manager, lead game designer and Unity developer in a group of 4 members.</p>
+								</header>
+								<header>
+									<h2>My Work</h2>
+									<h3>As A Game Designer</h3>
+									<p></p>
+									<h3>As An Unity Developer</h3>
+									<p>sdsd</p>
+								</header>
 							</section>
 
 					</div>
